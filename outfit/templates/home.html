@@ -1,0 +1,7 @@
+{% extends 'user_page.html' %}
+{% block main %}
+    <form action="{% url scvd.views.tops_image_upload %}" method="post">{% csrf_token %}
+        {{ form.image }}
+        <input type="submit" value="Upload" />
+    </form>
+{% endblock %}

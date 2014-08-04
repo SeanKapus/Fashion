@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+            <meta charset="UTF-8">
+            <script src="../static/js/jquery-1.11.1.js"></script>
+            <script src={% static "js/masonry.js" %}></script>
+            <span style="float:right;"><a href="{% url 'logout' %}">Logout</a></span>
+        <title>
+
+        </title>
+    </head>
+
+        <body>
+            {% block extrahead %}{% endblock %}
+            {% block content %}{% endblock %}
+            {% block drop%}{% endblock %}
+            {% block tops %}{% endblock %}
+            {% block bottoms%}{% endblock %}
+            {% block shoes %}{% endblock %}
+            {% block accessories %}{% endblock %}
+
+        </body>
+
+    <footer>
+    {% block footer %}
+
+    {% endblock %}
+    </footer>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+     {% block head %}{% endblock %}
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/cards.css' %}">#}
+  </head>
+    <body>
+     <a href="{% url 'home' %} ">Home</a> | <a href="{% url 'register' %} ">Sign up</a>
+     <span style="float:right;">
+           {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">Logout</a> | <a href="{% url 'profile' %}">Profile</a>  |
+            {% else %}
+            <a href="{% url 'login' %}">Login</a> | <a href="{% url 'register' %}">Register</a> |
+            {% endif %}
+{#            <a href="{% url 'last_login' %}">Last Login</a>#}
+  </span>
+     {% block title %}{%  endblock title %}
+
+    {% block content %}{% endblock content %}
+    </body><br>
+    <br>
+    <br>
+    <br>
+    {% block footer %}{%  endblock footer %}
+        <footer>
+
+            &copy; Fashionable Hick! Inc. {% now "Y" %}
+<span>
+    {% if user.is_authenticated %}
+        <a href="{% url 'profile' %}">{{ user.username }}</a> |
+        {% if user.is_staff %}
+            <a href="{% url 'admin:index' %}">Admin</a> |
+        {% endif %}
+        <a href="{% url 'logout' %}">Logout</a> |
+        {% else %}
+        <a href="{% url 'login' %}">Login</a> | <a href="{% url 'register' %}">Register</a>
+        {% endif %}
+</span>
+
+
+    </footer>
+
+</html>

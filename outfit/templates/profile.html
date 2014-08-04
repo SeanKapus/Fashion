@@ -1,0 +1,71 @@
+{% extends 'user_page.html' %}
+{% load staticfiles %}
+    {% block extrahead %}
+        <div id="header_container">
+            <div id="header">
+                <img src="../static/img/white-flowers-blue-sky-website-header.jpg" width=100% height="150" alt="'logo"/>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block content %}
+        <center><h1>Fashion for those who don't have it </h1>
+        <p>welcome back</p>
+        <h3>{{ user.username }}</h3></center>
+
+    {% endblock  %}
+        {% block drop %}
+    <div id="columnTwo" class="ui-droppable">
+        </div>
+    {% endblock %}
+
+    {% block tops %}
+        <div class="tops">
+            <div id="container_tops">
+                <img src={{ user }} class="top" />
+                {% for i in big %}
+                <img src="{{ i.image.url }}">
+                {% endfor %}
+            </div>
+        </div>
+
+    {% endblock %}
+
+    {% block bottoms %}
+        <div class="bottoms">
+            <div id="container_bottoms">
+
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block shoes %}
+        <div class="shoes">
+         <div id="container_shoes">
+
+            </div>
+        </div>
+    {% endblock%}
+
+    {% block accessories %}
+        <div class="accessories">
+         <div id="container_accessories">
+
+            </div>
+        </div>
+    {% endblock %}
+
+
+    {% block footer %}
+
+        <div class="footer">
+        <button id="clothes">Upload Clothes</button>
+            <div style="display: none" id="topform">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    {% endblock %}
