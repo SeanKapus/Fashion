@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect, render_to_response
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
+# Bad practice to use 'import *'
 from forms import *
 
 def register(request):
@@ -63,6 +64,8 @@ def profile(request):
 def getall(request):
     print request.user.id
     print Clothes.objects.filter(client=request.user.id)
+    # You should implement your choice field as it shows in the docs: https://docs.djangoproject.com/en/dev/ref/models/fields/#django.db.models.Field.choices
+    # You could then access something like TOPS instead of using the letter 'T', which is more readable
     data = Clothes.objects.filter(client=request.user.id, type='T')
     # clothes_objects = Clothes.objects.all()
     # collection = []
