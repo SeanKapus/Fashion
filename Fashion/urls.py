@@ -12,10 +12,12 @@ urlpatterns = patterns('',
     url(r'^$', 'django.contrib.auth.views.login', name='home'),
     url(r'^login/$', 'django.contrib.auth.views.login', name='login'),
     url(r'^register/$', 'outfit.views.register', name='register'),
+    url(r'^login_redirect/$', 'outfit.views.login_redirect', name='login_redirect'),
     url(r'^profile/$', 'outfit.views.profile', name='profile'),
-    url(r'^getall/$', 'outfit.views.getall', name='getall'),
+    url(r'girly/$', 'outfit.views.girly', name='girly'),
+    # url(r'^getall/$', 'outfit.views.getall', name='getall'),
     url(r'^logout/$', 'django.contrib.auth.views.logout', name='logout'),
-
+    # $("#start").show();
     #  Password reset URLS
 
     url(r'^password_reset/$', 'django.contrib.auth.views.password_reset', name='password_reset'),
@@ -34,5 +36,6 @@ urlpatterns = patterns('',
 
 
 )
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -12,7 +12,7 @@ GENDER_CHOICES = (
 class User(AbstractUser):
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    gender = models.CharField( max_length=1, choices=GENDER_CHOICES)
     # imageClient = models.ImageField(upload_to='profile_pics/')
 
     def __unicode__(self):
@@ -33,7 +33,7 @@ class Clothes(models.Model):
     type = models.CharField(max_length=1, choices=TYPE_CHOICES)
     description = models.CharField(max_length=200, blank=True)
     client = models.ForeignKey(User)
-    image = models.ImageField(upload_to='cloths/')
+    image = models.ImageField(upload_to='clothes/')
 
     def __unicode__(self):
         return self.name

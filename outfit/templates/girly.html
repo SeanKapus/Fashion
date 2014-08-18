@@ -11,13 +11,14 @@
     {% endblock %}
 
     {% block content %}
-        <center><h1>Fashion for those who don't have it </h1>
+        <center><h1>Help me get the most from my waredrode </h1>
         <p>welcome back</p>
         <h3>{{ user.username }}</h3></center>
-    {% endblock %}
+
+    {% endblock  %}
 
     {% block tops %}
-        <div class="tops">
+        <div class="ladiestops">
             <div id="container_tops">
                 {% for i in clothes_tops %}
                 <img src="{{ i.image.url }}">
@@ -28,7 +29,7 @@
     {% endblock %}
 
     {% block bottoms %}
-        <div class="bottoms">
+        <div class="ladiesbottoms">
             <div id="container_bottoms">
                 {% for i in bottoms %}
                 <img src="{{ i.image.url }}">
@@ -38,7 +39,7 @@
     {% endblock %}
 
     {% block shoes %}
-        <div class="shoes">
+        <div class="ladiesshoes">
          <div id="container_shoes">
               {%  for i in shoes %}
              <img src="{{ i.image.url }}">
@@ -48,7 +49,7 @@
     {% endblock%}
 
     {% block accessories %}
-        <div class="accessories">
+        <div class="ladiesaccessories">
          <div id="container_accessories">
                 {% for i in accessories %}
                 <img src="{{  i.image.url }}">
@@ -57,7 +58,7 @@
         </div>
     {% endblock %}
     {% block headwear %}
-        <div class="headwear">
+        <div class="ladiesheadwear">
             <div id="container_headwear">
                 {% for i in headwear %}
                 <img src="{{  i.image.url }}">
@@ -80,3 +81,4 @@
             </div>
         </div>
     {% endblock %}
+

@@ -3,7 +3,7 @@ from outfit.models import Clothes, User
 
 
 class ClothesAdmin(admin.ModelAdmin):
-    list_display = ('name', 'TYPE_CHOICES',)
+    list_display = ('name', 'type',)
 
 
 admin.site.register(Clothes)

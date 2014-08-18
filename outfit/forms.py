@@ -3,15 +3,20 @@ from django.contrib.auth.forms import UserCreationForm
 from django.forms import ModelForm
 from outfit.models import Clothes, User
 
+GENDER_CHOICES = (
+    ('M', 'Male'),
+    ('F', 'Female'),
+)
+
 
 class UserForm(UserCreationForm):
     first_name = forms.CharField(max_length=30)
     last_name = forms.CharField(max_length=30)
     email = forms.EmailField(required=True)
-    # imageClient = forms.ImageField(required=True)
+    gender = forms.ChoiceField(widget=forms.RadioSelect, choices=GENDER_CHOICES)
+
     class Meta(UserCreationForm.Meta):
         model = User
-    #     fields = ('image', 'first_name', 'last_name', 'email', 'username', 'password', 'password1')
 
     def clean_username(self):
             # Since User.username is unique, this check is redundant,
@@ -24,12 +29,12 @@ class UserForm(UserCreationForm):
         raise forms.ValidationError(
             self.error_messages['duplicate_username'],
             code='duplicate_username',
-            )
+        )
 
 # calls for upload button to list clothes object incidents
 class ClothesForm(ModelForm):
     class Meta:
         model = Clothes
-        fields = ['name', 'type', 'description', 'image']
+        fields = ['name', 'type', 'image']
 
 

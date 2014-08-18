@@ -6,10 +6,12 @@ from django.core import serializers
 from django.core.files.uploadhandler import FileUploadHandler
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import render, render_to_response, redirect
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
-from forms import *
+from outfit.forms import UserForm, ClothesForm
+from outfit.models import Clothes, User
+
 
 def register(request):
     if request.method == 'POST':
@@ -17,13 +19,11 @@ def register(request):
         if form.is_valid():
             user = form.save()
             # allows users to be redirected to home page after register
-            messages.info(request, "Thanks for registering. You are now logged in.")
+            messages.info(request, "Thanks for registering.")
             new_user = authenticate(username=request.POST['username'],
                                     password=request.POST['password1'])
-            login(request, new_user)
-            return HttpResponseRedirect(reverse("profile"))
 
-            # return redirect(reverse("profile"))
+        # return HttpResponseRedirect(reverse("profile"))
     else:
         form = UserForm()
     return render(request, 'registration/register.html', {
@@ -31,7 +31,13 @@ def register(request):
     })
 
 
-@login_required()
+def login_redirect(request):
+    if request.user.gender == 'M':
+        return redirect('profile')
+    else:
+        return redirect('girly')
+
+
 def profile(request):
     big = Clothes.objects.all()
     if request.method == 'POST':
@@ -43,33 +49,22 @@ def profile(request):
 
             # FileUploadHandler(request.FILES['image'])
             return HttpResponseRedirect('/profile')
-    else:
-        form = ClothesForm()
-    return render_to_response('profile.html', RequestContext(request, {'form': form, 'big': big}))
+    else: form = ClothesForm()
+
+    clothes_tops = Clothes.objects.filter(type = 'T')
+
+    clothes_bottoms = Clothes.objects.filter(type = 'B')
+
+    clothes_accessories = Clothes.objects.filter(type = 'A')
+
+    clothes_shoes = Clothes.objects.filter(type = 'S')
+
+    clothes_headwear = Clothes.objects.filter(type = 'H')
+
+    return render_to_response('profile.html', RequestContext(request,
+        {'form': form, 'big': big, 'clothes_tops': clothes_tops, 'bottoms': clothes_bottoms,
+         'accessories': clothes_accessories, 'shoes': clothes_shoes, 'headwear': clothes_headwear }))
 
 
-# def ClothesAll(request):
-#     clothes = Clothes.objects.all().order_by('name')
-#     context = {'clothes': clothes}
-#     return render_to_response('clothesall', context, context_instance=RequestContext(request))
-
-# def tops(request):
-#     data = {
-#         'clothes': Clothes.objects.all()
-#     }
-#     return render(request, 'profile.html', data)
-
-@csrf_exempt
-def getall(request):
-    print request.user.id
-    print Clothes.objects.filter(client=request.user.id)
-    data = Clothes.objects.filter(client=request.user.id, type='T')
-    # clothes_objects = Clothes.objects.all()
-    # collection = []
-    # for object in clothes_objects:
-    #     collection.append({
-    #         'image': object.i.fields.image,
-    #
-    #     })
-
-    return HttpResponse(serializers.serialize('json', data), content_type='application/json')
+def girly(request):
+    return render(request, 'girly.html',)
