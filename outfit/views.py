@@ -52,13 +52,9 @@ def profile(request):
     else: form = ClothesForm()
 
     clothes_tops = Clothes.objects.filter(type = 'T')
-
     clothes_bottoms = Clothes.objects.filter(type = 'B')
-
     clothes_accessories = Clothes.objects.filter(type = 'A')
-
     clothes_shoes = Clothes.objects.filter(type = 'S')
-
     clothes_headwear = Clothes.objects.filter(type = 'H')
 
     return render_to_response('profile.html', RequestContext(request,
