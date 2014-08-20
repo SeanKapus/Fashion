@@ -58,8 +58,30 @@ def profile(request):
 
     return render_to_response('profile.html', RequestContext(request,
         {'form': form, 'big': big, 'clothes_tops': clothes_tops, 'bottoms': clothes_bottoms,
-         'accessories': clothes_accessories, 'shoes': clothes_shoes, 'headwear': clothes_headwear }))
+         'accessories': clothes_accessories, 'shoes': clothes_shoes, 'headwear': clothes_headwear, }))
 
 
 def girly(request):
-    return render(request, 'girly.html',)
+    big = Clothes.objects.all()
+    useall = User.all()
+    if request.method == 'POST':
+        form = ClothesForm(request.POST, request.FILES)
+        if form.is_valid():
+            clothes = form.save(commit=False)
+            clothes.client = request.user
+            clothes.save()
+
+            # FileUploadHandler(request.FILES['image'])
+            return HttpResponseRedirect('/profile')
+    else: form = ClothesForm()
+
+    clothes_tops = Clothes.objects.filter(type = 'T')
+    clothes_bottoms = Clothes.objects.filter(type = 'B')
+    clothes_accessories = Clothes.objects.filter(type = 'A')
+    clothes_shoes = Clothes.objects.filter(type = 'S')
+    clothes_headwear = Clothes.objects.filter(type = 'H')
+
+    return render_to_response('girly.html', RequestContext(request,
+        {'form': form, 'big': big, 'clothes_tops': clothes_tops, 'bottoms': clothes_bottoms,
+         'accessories': clothes_accessories, 'shoes': clothes_shoes, 'headwear': clothes_headwear,}))
+

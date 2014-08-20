@@ -22,14 +22,14 @@
     <favorites_list name="Fashion" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4513567">
+    <splitter split-orientation="horizontal" split-proportion="0.55788517">
       <split-first>
         <leaf>
           <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/outfit/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1050">
-                  <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1395">
+                  <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -49,11 +49,35 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Fashion/settings.py">
+          <file leaf-file-name="profile.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/outfit/templates/profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1148" max-vertical-offset="1755">
-                  <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+                <state vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="1920">
+                  <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="72" />
+                  <folding>
+                    <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user_page.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/outfit/templates/user_page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6100478" vertical-offset="255" max-vertical-offset="900">
+                  <caret line="34" column="88" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
+                  <folding>
+                    <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user_page.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/outfit/static/css/user_page.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+                  <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -62,21 +86,9 @@
           <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Fashion/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="645">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
                   <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/outfit/forms.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3202417" vertical-offset="194" max-vertical-offset="720">
-                  <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#0#24#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -84,8 +96,8 @@
           <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/outfit/static/css/profile.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="2565">
-                  <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="647" max-vertical-offset="1245">
+                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -94,10 +106,10 @@
           <file leaf-file-name="girly.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/outfit/templates/girly.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1350">
-                  <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+                <state vertical-scroll-proportion="-6.25" vertical-offset="555" max-vertical-offset="1575">
+                  <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -106,8 +118,8 @@
           <file leaf-file-name="profile.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/outfit/static/js/profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="1020">
-                  <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="1251" max-vertical-offset="1740">
+                  <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -117,33 +129,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="profile.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/outfit/templates/profile.html">
+          <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/outfit/static/css/profile.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.0454545" vertical-offset="1005" max-vertical-offset="1500">
-                  <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user_page.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/outfit/templates/user_page.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.708333" vertical-offset="61" max-vertical-offset="525">
-                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/outfit/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="750">
-                  <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+                <state vertical-scroll-proportion="1.516129" vertical-offset="0" max-vertical-offset="1245">
+                  <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -177,22 +167,23 @@
         <option value="$PROJECT_DIR$/Fashion/urls.py" />
         <option value="$PROJECT_DIR$/Fashion/settings.py" />
         <option value="$PROJECT_DIR$/outfit/static/js/masonry.js" />
-        <option value="$PROJECT_DIR$/outfit/templates/girly.html" />
-        <option value="$PROJECT_DIR$/outfit/static/css/profile.css" />
-        <option value="$PROJECT_DIR$/outfit/static/js/profile.js" />
-        <option value="$PROJECT_DIR$/outfit/templates/profile.html" />
-        <option value="$PROJECT_DIR$/outfit/templates/user_page.html" />
-        <option value="$PROJECT_DIR$/outfit/views.py" />
         <option value="$PROJECT_DIR$/outfit/forms.py" />
         <option value="$PROJECT_DIR$/outfit/models.py" />
+        <option value="$PROJECT_DIR$/outfit/static/js/profile.js" />
+        <option value="$PROJECT_DIR$/outfit/static/js/girly.js" />
+        <option value="$PROJECT_DIR$/outfit/views.py" />
+        <option value="$PROJECT_DIR$/outfit/templates/girly.html" />
+        <option value="$PROJECT_DIR$/outfit/templates/profile.html" />
+        <option value="$PROJECT_DIR$/outfit/static/css/profile.css" />
+        <option value="$PROJECT_DIR$/outfit/static/css/user_page.css" />
+        <option value="$PROJECT_DIR$/outfit/templates/user_page.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-177" />
-    <option name="y" value="-972" />
-    <option name="width" value="1854" />
-    <option name="height" value="790" />
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -280,6 +271,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="outfit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fashion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fashion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outfit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fashion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fashion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Fashion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -296,7 +327,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/rocketu/klassy/klassy/klassy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fulldeck" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
@@ -534,7 +565,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-177" y="-972" width="1854" height="790" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="816" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -542,11 +573,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08502634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16611479" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21530758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4340974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30110496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -571,10 +602,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21530758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16611479" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.260745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4340974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -879,44 +910,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/static/js/profile.js">
+    <entry file="file://$PROJECT_DIR$/outfit/static/js/girly.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="1020">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="3.9663463" vertical-offset="0" max-vertical-offset="1755">
+          <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
+          <folding>
+            <element signature="e#3610#3651#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/static/css/profile.css">
+    <entry file="file://$PROJECT_DIR$/outfit/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="2565">
-          <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="720">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fashion/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1148" max-vertical-offset="1755">
-          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.22787611" vertical-offset="1303" max-vertical-offset="1755">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/templates/girly.html">
+    <entry file="file://$PROJECT_DIR$/outfit/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.165272" vertical-offset="28" max-vertical-offset="750">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfit/static/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1740">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/outfit/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1050">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1395">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -931,6 +972,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/outfit/static/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="647" max-vertical-offset="1245">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/outfit/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -941,38 +990,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/forms.py">
+    <entry file="file://$PROJECT_DIR$/outfit/templates/girly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3202417" vertical-offset="194" max-vertical-offset="720">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="555" max-vertical-offset="1575">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/models.py">
+    <entry file="file://$PROJECT_DIR$/outfit/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="750">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="1920">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfit/static/css/user_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/outfit/templates/user_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.708333" vertical-offset="61" max-vertical-offset="525">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outfit/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0454545" vertical-offset="1005" max-vertical-offset="1500">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6100478" vertical-offset="255" max-vertical-offset="900">
+          <caret line="34" column="88" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

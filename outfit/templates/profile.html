@@ -13,9 +13,10 @@
     {% endblock %}
 
     {% block content %}
+
         <center><h1>Fashion for those who don't have it </h1>
         <p>welcome back {{ user.username }}</p>
-        <h3>{{ user.description }}</h3></center>
+        <p>{{ user.description }}</p></center>
         <button id="clothes">Upload Clothes</button>
             <div style="display: none" id="topform">
                 <form method="POST" enctype="multipart/form-data">
@@ -24,69 +25,96 @@
                     <input type="submit" value="submit">
                 </form>
             </div>
-    {% endblock %}
 
-    {% block tops %}
-        <div class='tops'>
-            {% for i in clothes_tops %}
-            <img class="draggable_top" src="{{ i.image.url }}">
-            {% endfor %}
-        </div>
 
     {% endblock %}
 
-    {% block bottoms %}
-        <div class="bottoms" draggable="true">
-            {% for i in bottoms %}
-            <img class="draggable_bottom" src="{{ i.image.url }}">
-            {% endfor %}
-        </div>
-    {% endblock %}
+         {% block drop%}
+         <div class="container">
+            <div class="row">
+             <div class="droparea col-md-3 col-offset-1 pull-right">
 
-    {% block shoes %}
-         <div class="shoes" draggable="true">
-              {%  for i in shoes %}
-             <img class="draggable_shoes" src="{{ i.image.url }}">
-             {% endfor %}
-         </div>
-    {% endblock%}
+                 <div class="droppable_headwear">
+                     <ol class="ui_sortableHead">
+                        <li class="spotheld">hats here</li>
+                    </ol>
+                     <hr>
+                 </div>
 
-    {% block accessories %}
-        <div class="accessories" draggable="true">
-            {% for i in accessories %}
-            <img class="draggable_accessories" src="{{  i.image.url }}">
-            {% endfor %}
-        </div>
-    {% endblock %}
-    {% block headwear %}
-        <div class="headwear" draggable="true">
-            {% for i in headwear %}
-            <img class="draggable_headwear" src="{{  i.image.url }}">
-            {% endfor %}
+                 <div class="droppable_top">
+                    <ol class="ui_sortable">
+                        <li class="placeholder">tops here</li>
+                    </ol>
+                     <hr>
+                 </div>
 
-        </div>
-    {% endblock %}
-     {% block drop%}
-         <div class="droparea">
-             <ul>
-             <div class="droppable_headwear">
-                <p>drop headwear here</p>
+                 <div class="droppable_bottom">
+                    <ol class="ui_sortableA">
+                        <li class="spothold">pants here</li>
+                    </ol>
+                     <hr>
+                 </div>
+
+                 <div class="droppable_shoes">
+                     <ol class="ui_sortableShoes">
+                        <li class="placehold">shoes here</li>
+                    </ol>
+                     <hr>
+                 </div>
+
+                 <div class="droppable_accessories">
+                     <ol class="ui_sortableAcc">
+                        <li class="holdspot">accessories here</li>
+                    </ol>
+                     <hr>
+                 </div>
+                <a id="btn-start" href="" data-pk="{{ data.id }}" class="btn btn-primary btn-embossed">Save</a>
              </div>
-             <div class="droppable_top">
-                <p>drop tops here</p>
-             </div>
-             <div class="droppable_bottom">
-                <p>drop pants here</p>
-             </div>
-             <div class="droppable_shoes">
-                <p>drop shoes here</p>
-             </div>
-             <div class="droppable_accessories">
-                <p>drop accessories here</p>
-             </div>
-             </ul>
-         </div>
-     {% endblock %}
+         {% endblock %}
+
+
+
+        {% block body %}
+            <div class="col-md-8">
+                <div class='tops'>
+                    {% for i in clothes_tops %}
+                    <img class="draggable_top" src="{{ i.image.url }}" data-id="{{ i.id }}">
+                    {% endfor %}
+                </div>
+
+                <div class="bottoms" draggable="true">
+                    {% for i in bottoms %}
+                    <img class="draggable_bottom" src="{{ i.image.url }}" data-id="{{ i.id }}">
+                    {% endfor %}
+                </div>
+
+                 <div class="shoes" draggable="true">
+                      {%  for i in shoes %}
+                     <img class="draggable_shoes" src="{{ i.image.url }}" data-id="{{ i.id }}">
+                     {% endfor %}
+                 </div>
+
+                <div class="accessories" draggable="true">
+                    {% for i in accessories %}
+                    <img class="draggable_accessories" src="{{  i.image.url }}" data-id="{{ i.id }}">
+                    {% endfor %}
+                </div>
+
+                <div class="headwear" draggable="true">
+                    {% for i in headwear %}
+                    <img class="draggable_headwear" src="{{  i.image.url }}" data-id="{{ i.id }}">
+                    {% endfor %}
+
+                </div>
+            </div>
+
+                </div>
+            </div>
+        {% endblock %}
+
+
+
+
 
 
     {% block footer %}

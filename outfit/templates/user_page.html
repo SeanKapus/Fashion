@@ -2,23 +2,48 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
-            <meta charset="UTF-8">
-            <script src="../static/js/jquery-1.11.1.js"></script>
-            <span style="float:right;"><a href="{% url 'logout' %}">Logout</a></span>
+        <meta charset="UTF-8">
+        <script src="../static/js/jquery-1.11.1.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/css/user_page.css">
         <title>
 
         </title>
     </head>
 
         <body>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                 <span style="float:right;"><a href="{% url 'logout' %}">Logout</a></span>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
             {% block extrahead %}{% endblock %}
             {% block content %}{% endblock %}
             {% block drop%}{% endblock %}
-            {% block tops %}{% endblock %}
-            {% block bottoms%}{% endblock %}
-            {% block shoes %}{% endblock %}
-            {% block headwear %}{% endblock %}
-            {% block accessories %}{% endblock %}
+            {% block body %}{% endblock %}
+
 
         </body>
 

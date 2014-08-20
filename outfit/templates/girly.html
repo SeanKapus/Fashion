@@ -3,74 +3,19 @@
     {% block extrahead %}
         <div id="header_container">
             <div id="header">
+                <link rel="stylesheet" href="../static/css/profile.css">
                 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
                 <img src="../static/img/white-flowers-blue-sky-website-header.jpg" width=100% height="150" alt="'logo"/>
-                <script type="text/javascript" src="/outfit/static/js/profile.js"></script>
+                <script type="text/javascript" src="/static/js/girly.js"></script>
             </div>
         </div>
     {% endblock %}
 
     {% block content %}
-        <center><h1>Help me get the most from my waredrode </h1>
-        <p>welcome back</p>
-        <h3>{{ user.username }}</h3></center>
-
-    {% endblock  %}
-
-    {% block tops %}
-        <div class="ladiestops">
-            <div id="container_tops">
-                {% for i in clothes_tops %}
-                <img src="{{ i.image.url }}">
-                {% endfor %}
-            </div>
-        </div>
-
-    {% endblock %}
-
-    {% block bottoms %}
-        <div class="ladiesbottoms">
-            <div id="container_bottoms">
-                {% for i in bottoms %}
-                <img src="{{ i.image.url }}">
-                {% endfor %}
-            </div>
-        </div>
-    {% endblock %}
-
-    {% block shoes %}
-        <div class="ladiesshoes">
-         <div id="container_shoes">
-              {%  for i in shoes %}
-             <img src="{{ i.image.url }}">
-             {% endfor %}
-         </div>
-        </div>
-    {% endblock%}
-
-    {% block accessories %}
-        <div class="ladiesaccessories">
-         <div id="container_accessories">
-                {% for i in accessories %}
-                <img src="{{  i.image.url }}">
-                {% endfor %}
-          </div>
-        </div>
-    {% endblock %}
-    {% block headwear %}
-        <div class="ladiesheadwear">
-            <div id="container_headwear">
-                {% for i in headwear %}
-                <img src="{{  i.image.url }}">
-                {% endfor %}
-            </div>
-        </div>
-    {% endblock %}
-
-
-    {% block footer %}
-
-        <div class="footer">
+        <center><h1>Fashion for those who don't have it </h1>
+        <p>welcome back {{ user.username }}</p>
+        <h3>{{ user.description }}</h3></center>
         <button id="clothes">Upload Clothes</button>
             <div style="display: none" id="topform">
                 <form method="POST" enctype="multipart/form-data">
@@ -79,6 +24,76 @@
                     <input type="submit" value="submit">
                 </form>
             </div>
+    {% endblock %}
+
+    {% block body %}
+        <div class='tops'>
+            {% for i in clothes_tops %}
+            <img class="draggable_top" src="{{ i.image.url }}">
+            {% endfor %}
         </div>
+
+        <div class="bottoms" draggable="true">
+            {% for i in bottoms %}
+            <img class="draggable_bottom" src="{{ i.image.url }}">
+            {% endfor %}
+        </div>
+
+         <div class="shoes" draggable="true">
+              {%  for i in shoes %}
+             <img class="draggable_shoes" src="{{ i.image.url }}">
+             {% endfor %}
+         </div>
+
+        <div class="accessories" draggable="true">
+            {% for i in accessories %}
+            <img class="draggable_accessories" src="{{  i.image.url }}">
+            {% endfor %}
+        </div>
+
+        <div class="headwear" draggable="true">
+            {% for i in headwear %}
+            <img class="draggable_headwear" src="{{  i.image.url }}">
+            {% endfor %}
+
+        </div>
+    {% endblock %}
+         <div class="droparea">
+             <div class="droppable_headwear">
+                 <ol class="ui_sortableHead">
+                    <li class="spotheld">place headwear here</li>
+                </ol>
+             </div>
+
+             <div class="droppable_top">
+                <ol class="ui_sortable">
+                    <li class="placeholder">place tops here</li>
+                </ol>
+             </div>
+
+             <div class="droppable_bottom">
+                <ol class="ui_sortableA">
+                    <li class="spothold">place bottoms here</li>
+                </ol>
+             </div>
+
+             <div class="droppable_shoes">
+                 <ol class="ui_sortableShoes">
+                    <li class="placehold">place shoes here</li>
+                </ol>
+             </div>
+
+             <div class="droppable_accessories">
+                 <ol class="ui_sortableAcc">
+                    <li class="holdspot">place accessories here</li>
+                </ol>
+             </div>
+            <a id="btn-start" href="" data-pk="{{ pk }}" class="btn btn-primary btn-embossed">Save</a>
+         </div>
+     {% endblock %}
+
+
+    {% block footer %}
+
     {% endblock %}
 
