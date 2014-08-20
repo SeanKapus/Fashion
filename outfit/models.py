@@ -38,4 +38,9 @@ class Clothes(models.Model):
     def __unicode__(self):
         return self.name
 
+class Favorites(models.Model):
+    outfit = models.ManyToManyField(Clothes)
+    favs =models.ForeignKey(User)
+
+
 

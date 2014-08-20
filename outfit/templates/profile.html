@@ -15,7 +15,15 @@
     {% block content %}
         <center><h1>Fashion for those who don't have it </h1>
         <p>welcome back {{ user.username }}</p>
-        <h3></h3></center>
+        <h3>{{ user.description }}</h3></center>
+        <button id="clothes">Upload Clothes</button>
+            <div style="display: none" id="topform">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="submit">
+                </form>
+            </div>
     {% endblock %}
 
     {% block tops %}
@@ -83,14 +91,4 @@
 
     {% block footer %}
 
-        <div class="footer">
-        <button id="clothes">Upload Clothes</button>
-            <div style="display: none" id="topform">
-                <form method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <input type="submit" value="submit">
-                </form>
-            </div>
-        </div>
     {% endblock %}

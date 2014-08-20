@@ -23,7 +23,6 @@ def register(request):
             new_user = authenticate(username=request.POST['username'],
                                     password=request.POST['password1'])
 
-        # return HttpResponseRedirect(reverse("profile"))
     else:
         form = UserForm()
     return render(request, 'registration/register.html', {

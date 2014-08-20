@@ -3,20 +3,22 @@ from django.contrib.auth.forms import UserCreationForm
 from django.forms import ModelForm
 from outfit.models import Clothes, User
 
-GENDER_CHOICES = (
-    ('M', 'Male'),
-    ('F', 'Female'),
-)
+# GENDER_CHOICES = (
+#     ('M', 'Male'),
+#     ('F', 'Female'),
+# )
 
 
 class UserForm(UserCreationForm):
-    first_name = forms.CharField(max_length=30)
-    last_name = forms.CharField(max_length=30)
+    # first_name = forms.CharField(max_length=30)
+    # last_name = forms.CharField(max_length=30)
     email = forms.EmailField(required=True)
-    gender = forms.ChoiceField(widget=forms.RadioSelect, choices=GENDER_CHOICES)
+#     description = forms.CharField(widget=forms.Textarea, required=False)
+#     gender = forms.ChoiceField(widget=forms.RadioSelect, choices=GENDER_CHOICES)
 
     class Meta(UserCreationForm.Meta):
         model = User
+        fields = ('username', 'password1', 'password2', 'first_name', 'last_name', 'email', 'description', 'gender')
 
     def clean_username(self):
             # Since User.username is unique, this check is redundant,
