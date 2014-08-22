@@ -2,6 +2,8 @@
  * Created by SeanK on 8/14/14.
  */
 $(document).ready(function () {
+    // Should reuse this code between your two different templates instead of duplicating it
+    // You'll want to cleanup all of these console.log statements
 
 //    button to upload clothes to user profile
     $('#clothes').on('click', function() {
@@ -22,6 +24,9 @@ $(document).ready(function () {
           });
     });
 //    drag and drop tops  //////////////// ///////////////// //////////// /////////
+
+    // Can probably find a DRY method for adding draggable and droppable to the different areas.
+    // The code is fairly similar minus accessing the classes for each
     $(".draggable_top").draggable({
         appendTo: ".ui_sortable",
         helper: "clone",
