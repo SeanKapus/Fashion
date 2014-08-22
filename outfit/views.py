@@ -37,6 +37,8 @@ def login_redirect(request):
         return redirect('girly')
 
 
+# The code between your two views is not very DRY, you could reuse the code by making them the same view
+# that just changes the template being used based on the url
 def profile(request):
     big = Clothes.objects.all()
     if request.method == 'POST':
@@ -48,8 +50,11 @@ def profile(request):
 
             # FileUploadHandler(request.FILES['image'])
             return HttpResponseRedirect('/profile')
-    else: form = ClothesForm()
+    else: form = ClothesForm()  # Don't want to one-line this
 
+    # No whitespace around parameters to a filter
+    # This is probably on your radar, but I imagine Clothes should belong to users so
+    # that you can filter by the logged in user (user=request.user)
     clothes_tops = Clothes.objects.filter(type = 'T')
     clothes_bottoms = Clothes.objects.filter(type = 'B')
     clothes_accessories = Clothes.objects.filter(type = 'A')
